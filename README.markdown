@@ -1,8 +1,9 @@
 # Compass Import Once Plugin
 
-This gem makes [Sass Import Once][sass-import_once] work with compass.
+This gem makes [Sass Import Once][sass-import_once] work with compass while 
+[this issue](https://github.com/chriseppstein/compass/pull/1140) isn't fixed.
 
-Sass import_once changes the behaviour of the sass @import directive making never require the same file twice.
+Sass import_once **changes the default behaviour of the sass @import** directive making it never require the same file twice.
 
 It's awesome! [Check it out][sass-import_once]
 
