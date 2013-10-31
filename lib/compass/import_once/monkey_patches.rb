@@ -5,7 +5,7 @@ class Compass::Compiler
 
   def initialize(working_path, from, to, options)
     old_initialize(working_path, from, to, options)
-    self.sass_options[:importer] ||= Sass::ImportOnce::Importer.new(from)
+    self.sass_options[:importer] = Sass::ImportOnce::Importer.new(from)
   end
 end
 
@@ -17,9 +17,9 @@ module Compass::Configuration::Adapters
 
     load_paths.map! do |p|
       next p if p.respond_to?(:find_relative) && !p.is_a?(Sass::Importers::Filesystem)
-      Sass::Importers::Filesystem.new(p.to_s)
+      Sass::ImportOnce::Importer.new(p.to_s)
     end
-
+    
     load_paths
   end
 end

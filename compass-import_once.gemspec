@@ -19,5 +19,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_runtime_dependency 'compass', '>= 0.12.2'
+  s.add_runtime_dependency 'sass-import_once', '>= 0.1.2'
 
 end

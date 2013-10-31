@@ -5,4 +5,4 @@ gemspec
 
 gem 'rake'
 gem 'sass'
-gem 'sass-import_once'
+gem 'sass-import_once', '>= 0.1.2'
