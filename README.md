@@ -1,4 +1,6 @@
-# Compass Import Once Plugin
+# This project is deprecated. There is now an [official plugin](https://github.com/chriseppstein/compass/blob/master/import-once/README.md) and you should use it 
+
+## Compass Import Once Plugin
 
 This gem makes [Sass Import Once][sass-import_once] work with compass while 
 [this issue](https://github.com/chriseppstein/compass/pull/1140) isn't fixed.
